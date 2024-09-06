@@ -20,7 +20,9 @@ import Footer from './Footer.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href={`${path}images/isotipo.svg`}/>
     <meta name="author" content="Israel Wong">
+
     <link rel="manifest" href="/manifest.json">
+    <script is:inline src="/installPrompt.js" defer></script>
 
     <title>Colegio Ateneo | {title}</title>
 
@@ -48,7 +50,11 @@ import Footer from './Footer.astro';
 </head>
 <body>
 
-    <!-- <Header logo_size={logo_size}/> -->
+    <!-- botón instalar app -->
+    <button id="installButton" style="display: none;"
+    class="mx-auto fixed top-5 left-5 right-5 bg-blue-500 text-white p-2 rounded-md"
+    >Instalar App</button>
+
     <main class="mx-auto">
         <slot />
     </main>

@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, d as renderComponent, b as createAstro, m as maybeRenderHead } from '../chunks/astro/server_BzRFlNLR.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from '../chunks/Layout_DFRbxuUD.mjs';
+import { $ as $$Layout } from '../chunks/Layout_32Qaoul6.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
