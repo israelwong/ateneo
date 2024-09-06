@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, d as renderComponent, b as createAstro, m as maybeRenderHead } from '../chunks/astro/server_BzRFlNLR.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from '../chunks/Layout_F_6lM3En.mjs';
+import { $ as $$Layout } from '../chunks/Layout_DFRbxuUD.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -62,7 +62,7 @@ const $$Astro = createAstro();
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Inicio", "path": "./", "logo_size": "large" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<header class="py-5"> <figure> <img src="/images/logotipo.svg" alt="Astro" class="md:w-2/5 w-2/4 mx-auto py-5 text-center"> </figure> </header> <div class="flex items-center justify-center"> <div class="w-full h-full px-10"> ${renderComponent($$result2, "FormLogin", FormLogin, { "client:load": true, "client:component-hydration": "load", "client:component-path": "/Users/israelwong/Documents/Desarrollo/AteneoTarjetonDigital/src/components/FormLogin", "client:component-export": "default" })} </div> </div>` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Tarjet\xF3n digital", "path": "./", "logo_size": "large" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<header class="py-5"> <figure> <img src="/images/logotipo.svg" alt="Astro" class="md:w-2/5 w-2/4 mx-auto py-5 text-center"> </figure> </header> <div class="flex items-center justify-center"> <div class="md:max-w-screen-sm w-full h-full px-10"> ${renderComponent($$result2, "FormLogin", FormLogin, { "client:load": true, "client:component-hydration": "load", "client:component-path": "/Users/israelwong/Documents/Desarrollo/AteneoTarjetonDigital/src/components/FormLogin", "client:component-export": "default" })} </div> </div>` })}`;
 }, "/Users/israelwong/Documents/Desarrollo/AteneoTarjetonDigital/src/pages/index.astro", void 0);
 
 const $$file = "/Users/israelwong/Documents/Desarrollo/AteneoTarjetonDigital/src/pages/index.astro";

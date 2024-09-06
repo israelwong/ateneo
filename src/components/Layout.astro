@@ -20,6 +20,8 @@ import Footer from './Footer.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href={`${path}images/isotipo.svg`}/>
     <meta name="author" content="Israel Wong">
+    <link rel="manifest" href="/manifest.json">
+
     <title>Colegio Ateneo | {title}</title>
 
     <script
@@ -28,6 +30,18 @@ import Footer from './Footer.astro';
         src="https://kit.fontawesome.com/74d1405387.js"
         crossorigin="anonymous">
     </script>
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            console.log('Service Worker registrado con éxito:', registration.scope);
+        }, function(err) {
+            console.log('Error al registrar el Service Worker:', err);
+        });
+        });
+    }
+    </script>  
 
     <ViewTransitions />
     

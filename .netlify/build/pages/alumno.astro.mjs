@@ -2,15 +2,15 @@
 import { c as createComponent, r as renderTemplate, d as renderComponent, b as createAstro, m as maybeRenderHead } from '../chunks/astro/server_BzRFlNLR.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from '../chunks/Layout_F_6lM3En.mjs';
+import { $ as $$Layout } from '../chunks/Layout_DFRbxuUD.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro = createAstro();
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Validado", "path": "../", "logo_size": "small" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="w-full px-3"> <figure> <img src="/images/logotipo.svg" alt="Astro" class="w-2/5 mx-auto text-center py-5"> </figure> <div class="px-10 mb-4"> <p class="bg-blue-500 text-center py-3 text-white rounded-full uppercase tracking-wide font-bold"> <span class="font-light">Secundaria:</span> FFCAMK0254
-</p> </div> <figure class="px-10"> <img src="src/images/1.jpg" class="mx-auto rounded-md" decoding="async" loading="lazy"> </figure> <h3 class="
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Validado", "path": "../", "logo_size": "small" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="w-full px-3"> <figure> <img src="/images/logotipo.svg" alt="Astro" class="w-2/5 mx-auto text-center py-5"> </figure> <div class="px-10 mb-4 max-w-screen-sm mx-auto"> <p class="bg-blue-500 text-center py-3 text-white rounded-full uppercase tracking-wide font-bold"> <span class="font-light">Secundaria:</span> FFCAMK0254
+</p> </div> <figure class="px-10"> <img src="./images/alumno/1.jpg" class="mx-auto rounded-md" decoding="async" loading="lazy"> </figure> <h3 class="
     text-center
     text-4xl
     font-bold
@@ -18,7 +18,7 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     mt-2
     mb-3
     text-pink-900
-    ">Juárez Delgado Ian Axel</h3> <div class="grid grid-cols-2 mx-auto w-full gap-1"> <div class="text-center text-2xl border-r-white bg-gray-300 p-5">
+    ">Juárez Delgado Ian Axel</h3> <div class="grid grid-cols-2 mx-auto max-w-screen-sm gap-1"> <div class="text-center text-2xl border-r-white bg-gray-300 p-5">
 Grado: <span class="font-bold">2</span> </div> <div class="text-center text-2xl border-r-white bg-gray-300 p-5">
 Grupo: <span class="font-bold">A</span> </div> <div class="col-span-2 text-center text-xl bg-gray-300 p-5">
 Ciclo escolar: <span class="font-bold">2023-2024</span> </div> <div class="col-span-2 text-center text-xl bg-gray-300 p-5">
