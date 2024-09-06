@@ -1,0 +1,43 @@
+---
+import "@fontsource-variable/public-sans";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+interface Props{
+    title: string;
+    path?: string;
+    logo_size?: string;
+}
+const {title, path} = Astro.props;
+
+import Footer from './Footer.astro';
+
+---
+
+<!doctype html>
+<html lang="es" class="bg-gradient-to-b from-gray-300 to-white text-gray-900 h-auto min-h-full">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href={`${path}images/isotipo.svg`}/>
+    <meta name="author" content="Israel Wong">
+    <title>Colegio Ateneo | {title}</title>
+
+    <script
+        is:inline
+        data-astro-rerun
+        src="https://kit.fontawesome.com/74d1405387.js"
+        crossorigin="anonymous">
+    </script>
+
+    <ViewTransitions />
+    
+</head>
+<body>
+
+    <!-- <Header logo_size={logo_size}/> -->
+    <main class="mx-auto">
+        <slot />
+    </main>
+    <Footer path={path} />
+</body>
+</html>

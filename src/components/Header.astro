@@ -1,0 +1,29 @@
+---
+
+interface Props {
+    logo_size?: string;
+}
+
+const { logo_size } = Astro.props;
+
+
+
+---
+<header class="py-5">
+{ logo_size === "small" ? 
+    <header class="py-5">
+        <figure>
+            <img src="/images/logotipo.svg" alt="Astro" class="md:w-1/5 w-1/4 mx-auto py-5 text-center" />
+        </figure>
+    </header>
+    :
+    <header class="py-5">
+        <figure>
+            <img src="/images/logotipo.svg" alt="Astro" class="md:w-2/5 w-2/4 mx-auto py-5 text-center" />
+        </figure>
+    </header>
+}
+    <figure>
+        <img src="/images/logotipo.svg" alt="Astro" class="md:w-2/5 w-2/4 mx-auto py-5 text-center" />
+    </figure>
+</header>
